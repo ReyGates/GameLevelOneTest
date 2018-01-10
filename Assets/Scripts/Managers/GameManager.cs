@@ -49,7 +49,8 @@ public class GameManager : BaseManager<GameManager>
         }
         else
         {
-            _keyboard.active = false;
+            if(_keyboard != null)
+                _keyboard.active = false;
         }
     }
 
